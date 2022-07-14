@@ -1,0 +1,106 @@
+{
+	"$schema": "http://json-schema.org/draft-06/schema#",
+	"$id": "http://schema.infor.com/json-schema/M33PLInventoryAdjustment.json",
+	"title": "M33PLInventoryAdjustment",
+	"description": "This is an inventory adjustment sent from a 3PL to Burton Infor M3.",
+	"type": "object",
+	"required": [
+		"InventoryAdjustment"
+	],
+	"properties": {
+		"InventoryAdjustment": {
+			"type": "object",
+			"required": [
+				"adjustment_header",
+				"adjustment_line"
+			],
+			"properties": {
+				"adjustment_header": {
+					"type": "object",
+					"required": [
+						"company",
+						"warehouse",
+						"order_type"
+					],
+					"properties": {
+						"company": {
+							"type": "string",
+							"maxLength": 3
+						},
+						"warehouse": {
+							"type": "string",
+							"maxLength": 3
+						},
+						"order_type": {
+							"type": "string",
+							"maxLength": 3
+						}
+					}
+				},
+				"adjustment_line": {
+					"type": "array",
+					"x-position": 2,
+					"items": {
+						"type": "object",
+						"required": [
+							"item_number",
+							"item_number_EA13",
+							"item_number_UPC",
+							"location",
+							"quantity",
+							"transaction_reason",
+							"country_of_origins"
+						],
+						"properties": {
+							"item_number": {
+								"type": "string",
+								"maxLength": 15
+							},
+							"item_number_EA13": {
+								"type": "string",
+								"maxLength": 13
+							},
+							"item_number_UPC": {
+								"type": "string",
+								"maxLength": 12
+							},
+							"location": {
+								"type": "string",
+								"maxLength": 10
+							},
+							"quantity": {
+								"type": "string",
+								"maxLength": 11,
+								"description": "physical inventory quantity"
+							},
+							"transaction_reason": {
+								"type": "string",
+								"maxLength": 3
+							},
+							"country_of_origins": {
+								"type": "array",
+								"items": {
+									"type": "object",
+									"required": [
+										"country_of_origin",
+										"quantity_picked"
+									],
+									"properties": {
+										"country_of_origin": {
+											"type": "string",
+											"maxLength": 3
+										},
+										"quantity_picked": {
+											"type": "string",
+											"maxLength": 17
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

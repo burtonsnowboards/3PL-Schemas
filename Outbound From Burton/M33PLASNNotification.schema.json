@@ -1,0 +1,169 @@
+{
+	"$schema": "http://json-schema.org/draft-06/schema#",
+	"$id": "http://schema.infor.com/json-schema/M33PLASNNotification.json",
+	"title": "M33PLASNNotification",
+	"description": "This is a ASN notification sent to a 3PL from Burton Infor M3.",
+	"type": "object",
+	"required": [
+		"ASNNotification"
+	],
+	"properties": {
+		"ASNNotification": {
+			"type": "object",
+			"required": [
+				"warehouse_head",
+				"warehouse_package"
+			],
+			"properties": {
+				"warehouse_head": {
+					"type": "object",
+					"required": [
+						"company",
+						"message_number",
+						"delivery_note_number",
+						"warehouse",
+						"gross_weight"
+					],
+					"properties": {
+						"company": {
+							"type": "string",
+							"maxLength": 3
+						},
+						"message_number": {
+							"type": "string",
+							"maxLength": 15
+						},
+						"delivery_note_number": {
+							"type": "string",
+							"maxLength": 20
+						},
+						"warehouse": {
+							"type": "string",
+							"maxLength": 3
+						},
+						"gross_weight": {
+							"type": "string",
+							"maxLength": 17
+						}
+					}
+				},
+				"warehouse_package": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"required": [
+							"package_number",
+							"message_line_number",
+							"item_number",
+							"item_number_EA13",
+							"item_number_UPC",
+							"quantity",
+							"stock_category",
+							"country_of_origin",
+							"HTS_code",
+							"vendor",
+							"vendor_price",
+							"incoterms",
+							"incoterms_description",
+							"purchase_order_number",
+							"location",
+							"unit_gross_weight",
+							"MID_code",
+							"country_of_origins"
+						],
+						"properties": {
+							"package_number": {
+								"type": "string",
+								"maxLength": 20
+							},
+							"message_line_number": {
+								"type": "string",
+								"maxLength": 5
+							},
+							"item_number": {
+								"type": "string",
+								"maxLength": 15
+							},
+							"item_number_EA13": {
+								"type": "string",
+								"maxLength": 13
+							},
+							"item_number_UPC": {
+								"type": "string",
+								"maxLength": 12
+							},
+							"quantity": {
+								"type": "string",
+								"maxLength": 17
+							},
+							"stock_category": {
+								"type": "string",
+								"maxLength": 3
+							},
+							"country_of_origin": {
+								"type": "string",
+								"maxLength": 3
+							},
+							"HTS_code": {
+								"type": "string",
+								"maxLength": 16
+							},
+							"vendor": {
+								"type": "string",
+								"maxLength": 10
+							},
+							"vendor_price": {
+								"type": "string",
+								"maxLength": 19
+							},
+							"incoterms": {
+								"type": "string",
+								"maxLength": 3
+							},
+							"incoterms_description": {
+								"type": "string",
+								"maxLength": 10
+							},
+							"purchase_order_number": {
+								"type": "string",
+								"maxLength": 10
+							},
+							"location": {
+								"type": "string",
+								"maxLength": 10
+							},
+							"unit_gross_weight": {
+								"type": "string",
+								"maxLength": 17
+							},
+							"MID_code": {
+								"type": "string",
+								"maxLength": 20
+							},
+							"country_of_origins": {
+								"type": "array",
+								"items": {
+									"type": "object",
+									"required": [
+										"country_of_origin",
+										"quantity_picked"
+									],
+									"properties": {
+										"country_of_origin": {
+											"type": "string",
+											"maxLength": 3
+										},
+										"quantity_picked": {
+											"type": "string",
+											"maxLength": 17
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

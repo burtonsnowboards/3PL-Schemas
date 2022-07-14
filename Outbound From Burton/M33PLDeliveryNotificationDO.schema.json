@@ -1,0 +1,272 @@
+{
+	"$schema": "http://json-schema.org/draft-06/schema#",
+	"$id": "http://schema.infor.com/json-schema/M33PLDeliveryNotificationDO.json",
+	"title": "M33PLDeliveryNotificationDO",
+	"description": "This is a distribution order delivery notification sent to a 3PL from Burton Infor M3.",
+	"type": "object",
+	"required": [
+		"DeliveryNotificationDO"
+	],
+	"properties": {
+		"DeliveryNotificationDO": {
+			"type": "object",
+			"required": [
+				"delivery_header",
+				"delivery_line"
+			],
+			"properties": {
+				"delivery_header": {
+					"type": "object",
+					"required": [
+						"company",
+						"delivery_number",
+						"order_number",
+						"customers_order_number",
+						"order_type",
+						"facility",
+						"priority",
+						"delivery_method",
+						"delivery_terms",
+						"gross_weight",
+						"project_number",
+						"project_element",
+						"warehouse",
+						"SCAC",
+						"requested_delivery_date",
+						"to_location",
+						"to_warehouse_address"
+					],
+					"properties": {
+						"company": {
+							"type": "string",
+							"maxLength": 3
+						},
+						"delivery_number": {
+							"type": "string",
+							"maxLength": 11
+						},
+						"order_number": {
+							"type": "string",
+							"maxLength": 10
+						},
+						"customers_order_number": {
+							"type": "string",
+							"maxLength": 20
+						},
+						"order_type": {
+							"type": "string",
+							"maxLength": 3
+						},
+						"facility": {
+							"type": "string",
+							"maxLength": 3
+						},
+						"priority": {
+							"type": "string",
+							"maxLength": 1
+						},
+						"delivery_method": {
+							"type": "string",
+							"maxLength": 3
+						},
+						"delivery_terms": {
+							"type": "string",
+							"maxLength": 3
+						},
+						"gross_weight": {
+							"type": "string",
+							"maxLength": 17
+						},
+						"project_number": {
+							"type": "string",
+							"maxLength": 7
+						},
+						"project_element": {
+							"type": "string",
+							"maxLength": 8
+						},
+						"warehouse": {
+							"type": "string",
+							"maxLength": 3
+						},
+						"SCAC": {
+							"type": "string"
+						},
+						"requested_delivery_date": {
+							"type": "string",
+							"maxLength": 10,
+							"description": "date in yyyy-MM-dd format"
+						},
+						"to_location": {
+							"type": "string",
+							"maxLength": 10
+						},
+						"to_warehouse_address": {
+							"type": "object",
+							"required": [
+								"code",
+								"name",
+								"address_line_1",
+								"address_line_2",
+								"address_line_3",
+								"address_line_4",
+								"postal_code",
+								"telephone_number",
+								"country",
+								"city",
+								"state"
+							],
+							"properties": {
+								"code": {
+									"type": "string",
+									"maxLength": 3
+								},
+								"name": {
+									"type": "string",
+									"maxLength": 36
+								},
+								"address_line_1": {
+									"type": "string",
+									"maxLength": 36
+								},
+								"address_line_2": {
+									"type": "string",
+									"maxLength": 36
+								},
+								"address_line_3": {
+									"type": "string",
+									"maxLength": 36
+								},
+								"address_line_4": {
+									"type": "string",
+									"maxLength": 36
+								},
+								"postal_code": {
+									"type": "string",
+									"maxLength": 10
+								},
+								"telephone_number": {
+									"type": "string",
+									"maxLength": 16
+								},
+								"country": {
+									"type": "string",
+									"maxLength": 3
+								},
+								"city": {
+									"type": "string",
+									"maxLength": 20
+								},
+								"state": {
+									"type": "string",
+									"maxLength": 2
+								}
+							}
+						}
+					}
+				},
+				"delivery_line": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"required": [
+							"item_number",
+							"item_number_EA13",
+							"item_number_UPC",
+							"unit_of_measure",
+							"delivery_quantity",
+							"order_line_number",
+							"unit_price_gross",
+							"unit_gross_weight",
+							"location",
+							"MSRP",
+							"MSRP_currency",
+							"customs_material_contents_1",
+							"customs_material_contents_2",
+							"destination_country_HTS_code",
+							"destination_country_HTS_description",
+							"VAS"
+						],
+						"properties": {
+							"item_number": {
+								"type": "string",
+								"maxLength": 15
+							},
+							"item_number_EA13": {
+								"type": "string",
+								"maxLength": 13
+							},
+							"item_number_UPC": {
+								"type": "string",
+								"maxLength": 12
+							},
+							"unit_of_measure": {
+								"type": "string",
+								"maxLength": 3
+							},
+							"delivery_quantity": {
+								"type": "string",
+								"maxLength": 16
+							},
+							"order_line_number": {
+								"type": "string",
+								"maxLength": 6
+							},
+							"unit_price_gross": {
+								"type": "string",
+								"maxLength": 19
+							},
+							"unit_gross_weight": {
+								"type": "string",
+								"maxLength": 17
+							},
+							"location": {
+								"type": "string",
+								"maxLength": 10
+							},
+							"MSRP": {
+								"type": "string",
+								"maxLength": 19
+							},
+							"MSRP_currency": {
+								"type": "string",
+								"maxLength": 3
+							},
+							"customs_material_contents_1": {
+								"type": "string",
+								"maxLength": 120
+							},
+							"customs_material_contents_2": {
+								"type": "string",
+								"maxLength": 120
+							},
+							"destination_country_HTS_code": {
+								"type": "string",
+								"maxLength": 16
+							},
+							"destination_country_HTS_description": {
+								"type": "string",
+								"maxLength": 40
+							},
+							"VAS": {
+								"type": "array",
+								"items": {
+									"type": "object",
+									"required": [
+										"VAS"
+									],
+									"properties": {
+										"VAS": {
+											"type": "string",
+											"maxLength": 15
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

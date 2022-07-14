@@ -1,0 +1,153 @@
+{
+	"$schema": "http://json-schema.org/draft-06/schema#",
+	"$id": "http://schema.infor.com/json-schema/M33PLReceiptNotificationDO.json",
+	"title": "M33PLReceiptNotificationDO",
+	"description": "This is an distribution order receipt notification sent to a 3PL from Burton Infor M3.",
+	"type": "object",
+	"required": [
+		"ReceiptNotificationDO"
+	],
+	"properties": {
+		"ReceiptNotificationDO": {
+			"type": "object",
+			"required": [
+				"header",
+				"lines"
+			],
+			"properties": {
+				"header": {
+					"type": "object",
+					"required": [
+						"company",
+						"warehouse",
+						"delivery_number",
+						"order_number"
+					],
+					"properties": {
+						"company": {
+							"type": "string",
+							"maxLength": 3
+						},
+						"warehouse": {
+							"type": "string",
+							"maxLength": 3
+						},
+						"delivery_number": {
+							"type": "string",
+							"maxLength": 11
+						},
+						"order_number": {
+							"type": "string",
+							"maxLength": 10
+						},
+						"gross_weight": {
+							"type": "string",
+							"maxLength": 10
+						}
+					}
+				},
+				"lines": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"required": [
+							"package_number",
+							"packaging",
+							"item_number",
+							"item_number_EA13",
+							"item_number_UPC",
+							"line_number",
+							"delivered_quantity",
+							"unit_gross_weight",
+							"net_weight",
+							"unit_of_measure",
+							"from_warehouse",
+							"HTS_code",
+							"country_of_origins"
+						],
+						"properties": {
+							"package_number": {
+								"type": "string",
+								"maxLength": 20
+							},
+							"packaging": {
+								"type": "string",
+								"maxLength": 6
+							},
+							"item_number": {
+								"type": "string",
+								"maxLength": 15
+							},
+							"item_number_EA13": {
+								"type": "string",
+								"maxLength": 13
+							},
+							"item_number_UPC": {
+								"type": "string",
+								"maxLength": 12
+							},
+							"line_number": {
+								"type": "string",
+								"maxLength": 6
+							},
+							"delivered_quantity": {
+								"type": "string",
+								"maxLength": 17
+							},
+							"unit_gross_weight": {
+								"type": "string",
+								"minimum": 17
+							},
+							"net_weight": {
+								"type": "string",
+								"minimum": 17
+							},
+							"unit_of_measure": {
+								"type": "string",
+								"maxLength": 3
+							},
+							"from_warehouse": {
+								"type": "string",
+								"maxLength": 3
+							},
+							"HTS_code": {
+								"type": "string",
+								"maxLength": 16
+							},
+							"country_of_origins": {
+								"type": "array",
+								"items": {
+									"type": "object",
+									"required": [
+										"country_of_origin",
+										"delivered_quantity",
+										"vendor",
+										"manufacturer"
+									],
+									"properties": {
+										"country_of_origin": {
+											"type": "string",
+											"maxLength": 3
+										},
+										"delivered_quantity": {
+											"type": "string",
+											"maxLength": 17
+										},
+										"vendor": {
+											"type": "string",
+											"maxLength": 10
+										},
+										"manufacturer": {
+											"type": "string",
+											"maxLength": 10
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

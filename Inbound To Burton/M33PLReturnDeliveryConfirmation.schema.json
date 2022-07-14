@@ -1,0 +1,110 @@
+{
+	"$schema": "http://json-schema.org/draft-06/schema#",
+	"$id": "http://schema.infor.com/json-schema/M33PLReturnDeliveryConfirmation.json",
+	"title": "M33PLReturnDeliveryConfirmation",
+	"description": "This is a return delivery confirmation sent from the 3PL to Burton Infor M3.",
+	"type": "object",
+	"required": [
+		"ReturnDeliveryConfirmation"
+	],
+	"properties": {
+		"ReturnDeliveryConfirmation": {
+			"type": "object",
+			"required": [
+				"return_header",
+				"return_line"
+			],
+			"properties": {
+				"return_header": {
+					"type": "object",
+					"x-position": 1,
+					"required": [
+						"company",
+						"warehouse",
+						"receiving_number",
+						"order_number"
+					],
+					"properties": {
+						"company": {
+							"type": "string",
+							"maxLength": 3
+						},
+						"warehouse": {
+							"type": "string",
+							"maxLength": 3
+						},
+						"receiving_number": {
+							"type": "string",
+							"maxLength": 10
+						},
+						"order_number": {
+							"type": "string",
+							"maxLength": 10
+						}
+					}
+				},
+				"return_line": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"required": [
+							"order_line_number",
+							"quantity",
+							"item_number",
+							"item_number_EA13",
+							"item_number_UPC",
+							"location",
+							"country_of_origins"
+						],
+						"properties": {
+							"order_line_number": {
+								"type": "string",
+								"maxLength": 5
+							},
+							"quantity": {
+								"type": "string",
+								"maxLength": 17
+							},
+							"item_number": {
+								"type": "string",
+								"maxLength": 15
+							},
+							"item_number_EA13": {
+								"type": "string",
+								"maxLength": 13
+							},
+							"item_number_UPC": {
+								"type": "string",
+								"maxLength": 12
+							},
+							"location": {
+								"type": "string",
+								"maxLength": 10
+							},
+							"country_of_origins": {
+								"type": "array",
+								"items": {
+									"type": "object",
+									"required": [
+										"country_of_origin",
+										"quantity_picked"
+									],
+									"properties": {
+										"country_of_origin": {
+											"type": "string",
+											"maxLength": 3
+										},
+										"quantity_picked": {
+											"type": "string",
+											"maxLength": 17
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

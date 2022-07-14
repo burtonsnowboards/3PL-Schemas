@@ -1,0 +1,685 @@
+{
+	"$schema": "http://json-schema.org/draft-06/schema#",
+	"$id": "http://schema.infor.com/json-schema/M33PLDeliveryNotificationCO.json",
+	"title": "M33PLDeliveryNotificationCO",
+	"description": "This is a customer order delivery notification sent to a 3PL from Burton Infor M3.",
+	"type": "object",
+	"required": [
+		"DeliveryNotificationCO"
+	],
+	"properties": {
+		"DeliveryNotificationCO": {
+			"type": "object",
+			"required": [
+				"delivery_header",
+				"customer_address",
+				"company_address",
+				"payer_address",
+				"ship_to_address",
+				"sold_to_address",
+				"shipping_condition",
+				"shipping_instructions",
+				"delivery_line"
+			],
+			"properties": {
+				"delivery_header": {
+					"type": "object",
+					"required": [
+						"company",
+						"delivery_number",
+						"customer_number",
+						"order_number",
+						"customers_order_number",
+						"order_type",
+						"inco_term",
+						"warehouse",
+						"gross_weight",
+						"cancel_date",
+						"currency",
+						"route",
+						"requested_delivery_date",
+						"facility"
+					],
+					"properties": {
+						"company": {
+							"type": "string",
+							"maxLength": 3
+						},
+						"delivery_number": {
+							"type": "string",
+							"maxLength": 11
+						},
+						"customer_number": {
+							"type": "string",
+							"maxLength": 10
+						},
+						"order_number": {
+							"type": "string",
+							"maxLength": 10
+						},
+						"customers_order_number": {
+							"type": "string",
+							"maxLength": 20
+						},
+						"order_type": {
+							"type": "string",
+							"maxLength": 3
+						},
+						"inco_term": {
+							"type": "string",
+							"maxLength": 3
+						},
+						"warehouse": {
+							"type": "string",
+							"maxLength": 3
+						},
+						"gross_weight": {
+							"type": "string",
+							"maxLength": 17
+						},
+						"cancel_date": {
+							"type": "string",
+							"maxLength": 10,
+							"description": "date in yyyy-MM-dd format"
+						},
+						"currency": {
+							"type": "string",
+							"maxLength": 3
+						},
+						"route": {
+							"type": "string",
+							"maxLength": 3
+						},
+						"requested_delivery_date": {
+							"type": "string",
+							"maxLength": 10,
+							"description": "date in yyyy-MM-dd format"
+						},
+						"facility": {
+							"type": "string",
+							"maxLength": 3
+						}
+					}
+				},
+				"customer_address": {
+					"type": "object",
+					"required": [
+						"code",
+						"name",
+						"address_1",
+						"address_2",
+						"address_3",
+						"address_4",
+						"postal_code",
+						"telephone_number",
+						"fascsmile_tranmission",
+						"country",
+						"state",
+						"city"
+					],
+					"properties": {
+						"code": {
+							"type": "string",
+							"maxLength": 10
+						},
+						"name": {
+							"type": "string",
+							"maxLength": 36
+						},
+						"address_1": {
+							"type": "string",
+							"maxLength": 36
+						},
+						"address_2": {
+							"type": "string",
+							"maxLength": 36
+						},
+						"address_3": {
+							"type": "string",
+							"maxLength": 36
+						},
+						"address_4": {
+							"type": "string",
+							"maxLength": 36
+						},
+						"postal_code": {
+							"type": "string",
+							"maxLength": 10
+						},
+						"telephone_number": {
+							"type": "string",
+							"maxLength": 16
+						},
+						"fascsmile_tranmission": {
+							"type": "string",
+							"maxLength": 16
+						},
+						"country": {
+							"type": "string",
+							"maxLength": 3
+						},
+						"state": {
+							"type": "string",
+							"maxLength": 2
+						},
+						"city": {
+							"type": "string",
+							"maxLength": 20
+						}
+					}
+				},
+				"company_address": {
+					"type": "object",
+					"required": [
+						"code",
+						"name",
+						"address_1",
+						"address_2",
+						"address_3",
+						"address_4",
+						"postal_code",
+						"telephone_number",
+						"fascsmile_tranmission",
+						"country",
+						"state",
+						"city"
+					],
+					"properties": {
+						"code": {
+							"type": "string",
+							"maxLength": 10
+						},
+						"name": {
+							"type": "string",
+							"maxLength": 36
+						},
+						"address_1": {
+							"type": "string",
+							"maxLength": 36
+						},
+						"address_2": {
+							"type": "string",
+							"maxLength": 36
+						},
+						"address_3": {
+							"type": "string",
+							"maxLength": 36
+						},
+						"address_4": {
+							"type": "string",
+							"maxLength": 36
+						},
+						"postal_code": {
+							"type": "string",
+							"maxLength": 10
+						},
+						"telephone_number": {
+							"type": "string",
+							"maxLength": 16
+						},
+						"fascsmile_tranmission": {
+							"type": "string",
+							"maxLength": 16
+						},
+						"country": {
+							"type": "string",
+							"maxLength": 3
+						},
+						"state": {
+							"type": "string",
+							"maxLength": 2
+						},
+						"city": {
+							"type": "string",
+							"maxLength": 20
+						}
+					}
+				},
+				"payer_address": {
+					"type": "object",
+					"required": [
+						"code",
+						"name",
+						"address_1",
+						"address_2",
+						"address_3",
+						"address_4",
+						"postal_code",
+						"telephone_number",
+						"fascsmile_tranmission",
+						"country",
+						"state",
+						"city"
+					],
+					"properties": {
+						"code": {
+							"type": "string",
+							"maxLength": 10
+						},
+						"name": {
+							"type": "string",
+							"maxLength": 36
+						},
+						"address_1": {
+							"type": "string",
+							"maxLength": 36
+						},
+						"address_2": {
+							"type": "string",
+							"maxLength": 36
+						},
+						"address_3": {
+							"type": "string",
+							"maxLength": 36
+						},
+						"address_4": {
+							"type": "string",
+							"maxLength": 36
+						},
+						"postal_code": {
+							"type": "string",
+							"maxLength": 10
+						},
+						"telephone_number": {
+							"type": "string",
+							"maxLength": 16
+						},
+						"fascsmile_tranmission": {
+							"type": "string",
+							"maxLength": 16
+						},
+						"country": {
+							"type": "string",
+							"maxLength": 3
+						},
+						"state": {
+							"type": "string",
+							"maxLength": 2
+						},
+						"city": {
+							"type": "string",
+							"maxLength": 20
+						}
+					}
+				},
+				"ship_to_address": {
+					"type": "object",
+					"required": [
+						"code",
+						"name",
+						"address_1",
+						"address_2",
+						"address_3",
+						"address_4",
+						"postal_code",
+						"telephone_number",
+						"fascsmile_tranmission",
+						"country",
+						"state",
+						"city"
+					],
+					"properties": {
+						"code": {
+							"type": "string",
+							"maxLength": 10
+						},
+						"name": {
+							"type": "string",
+							"maxLength": 36
+						},
+						"address_1": {
+							"type": "string",
+							"maxLength": 36
+						},
+						"address_2": {
+							"type": "string",
+							"maxLength": 36
+						},
+						"address_3": {
+							"type": "string",
+							"maxLength": 36
+						},
+						"address_4": {
+							"type": "string",
+							"maxLength": 36
+						},
+						"postal_code": {
+							"type": "string",
+							"maxLength": 10
+						},
+						"telephone_number": {
+							"type": "string",
+							"maxLength": 16
+						},
+						"fascsmile_tranmission": {
+							"type": "string",
+							"maxLength": 16
+						},
+						"country": {
+							"type": "string",
+							"maxLength": 3
+						},
+						"state": {
+							"type": "string",
+							"maxLength": 2
+						},
+						"city": {
+							"type": "string",
+							"maxLength": 20
+						}
+					}
+				},
+				"sold_to_address": {
+					"type": "object",
+					"required": [
+						"code",
+						"name",
+						"address_1",
+						"address_2",
+						"address_3",
+						"address_4",
+						"postal_code",
+						"telephone_number",
+						"fascsmile_tranmission",
+						"country",
+						"state",
+						"city"
+					],
+					"properties": {
+						"code": {
+							"type": "string",
+							"maxLength": 10
+						},
+						"name": {
+							"type": "string",
+							"maxLength": 36
+						},
+						"address_1": {
+							"type": "string",
+							"maxLength": 36
+						},
+						"address_2": {
+							"type": "string",
+							"maxLength": 36
+						},
+						"address_3": {
+							"type": "string",
+							"maxLength": 36
+						},
+						"address_4": {
+							"type": "string",
+							"maxLength": 36
+						},
+						"postal_code": {
+							"type": "string",
+							"maxLength": 10
+						},
+						"telephone_number": {
+							"type": "string",
+							"maxLength": 16
+						},
+						"fascsmile_tranmission": {
+							"type": "string",
+							"maxLength": 16
+						},
+						"country": {
+							"type": "string",
+							"maxLength": 3
+						},
+						"state": {
+							"type": "string",
+							"maxLength": 2
+						},
+						"city": {
+							"type": "string",
+							"maxLength": 20
+						}
+					}
+				},
+				"shipping_condition": {
+					"type": "object",
+					"required": [
+						"freight_account",
+						"SCAC",
+						"delivery_method",
+						"terms",
+						"UCCID"
+					],
+					"properties": {
+						"freight_account": {
+							"type": "string"
+						},
+						"SCAC": {
+							"type": "string"
+						},
+						"delivery_method": {
+							"type": "string",
+							"maxLength": 3
+						},
+						"terms": {
+							"type": "string"
+						},
+						"UCCID": {
+							"type": "string"
+						}
+					}
+				},
+				"shipping_instructions": {
+					"type": "object",
+					"description": "specific to japan",
+					"required": [
+						"arrival_date",
+						"arrival_time",
+						"arrival_specified"
+					],
+					"properties": {
+						"arrival_date": {
+							"type": "string",
+							"maxLength": 10,
+							"description": "date in yyyy-MM-dd format"
+						},
+						"arrival_time": {
+							"type": "string",
+							"maxLength": 8,
+							"description": "time in HH:mm:ss format"
+						},
+						"arrival_specified": {
+							"type": "string",
+							"maxLength": 1,
+							"description": "1 if arrial is specified, 0 if not specified"
+						}
+					}
+				},
+				"delivery_line": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"required": [
+							"item_number",
+							"item_number_EA13",
+							"item_number_UPC",
+							"unit_of_measure",
+							"delivery_quantity",
+							"order_line_number",
+							"unit_price_gross",
+							"unit_price_net",
+							"location",
+							"unit_gross_weight",
+							"net_weight",
+							"MSRP",
+							"MSRP_currency",
+							"customs_material_contents_1",
+							"customs_material_contents_2",
+							"destination_country_HTS_code",
+							"destination_country_HTS_description",
+							"VAS",
+							"zh_address_partner"
+						],
+						"properties": {
+							"item_number": {
+								"type": "string",
+								"maxLength": 15
+							},
+							"item_number_EA13": {
+								"type": "string",
+								"maxLength": 13
+							},
+							"item_number_UPC": {
+								"type": "string",
+								"maxLength": 12
+							},
+							"unit_of_measure": {
+								"type": "string",
+								"maxLength": 3
+							},
+							"delivery_quantity": {
+								"type": "string",
+								"maxLength": 16
+							},
+							"order_line_number": {
+								"type": "string",
+								"maxLength": 6
+							},
+							"unit_price_gross": {
+								"type": "string",
+								"maxLength": 19
+							},
+							"unit_price_net": {
+								"type": "string",
+								"maxLength": 18
+							},
+							"location": {
+								"type": "string",
+								"maxLength": 10
+							},
+							"unit_gross_weight": {
+								"type": "string",
+								"maxLength": 17
+							},
+							"net_weight": {
+								"type": "string",
+								"maxLength": 17
+							},
+							"MSRP": {
+								"type": "string",
+								"maxLength": 19
+							},
+							"MSRP_currency": {
+								"type": "string",
+								"maxLength": 3
+							},
+							"customs_material_contents_1": {
+								"type": "string",
+								"maxLength": 120
+							},
+							"customs_material_contents_2": {
+								"type": "string",
+								"maxLength": 120
+							},
+							"destination_country_HTS_code": {
+								"type": "string",
+								"maxLength": 16
+							},
+							"destination_country_HTS_description": {
+								"type": "string",
+								"maxLength": 40
+							},
+							"VAS": {
+								"type": "array",
+								"items": {
+									"type": "object",
+									"required": [
+										"VAS"
+									],
+									"properties": {
+										"VAS": {
+											"type": "string",
+											"maxLength": 15
+										}
+									}
+								}
+							},
+							"zh_address_partner": {
+								"type": "object",
+								"required": [
+									"name",
+									"address_line_1",
+									"address_line_2",
+									"address_line_3",
+									"address_line_4",
+									"postal_code",
+									"telephone_number",
+									"fascsimile_transmission_number",
+									"reference",
+									"country",
+									"state",
+									"delivery_specification",
+									"city",
+									"delivery_customer"
+								],
+								"properties": {
+									"name": {
+										"type": "string",
+										"maxLength": 36
+									},
+									"address_line_1": {
+										"type": "string",
+										"maxLength": 36
+									},
+									"address_line_2": {
+										"type": "string",
+										"maxLength": 36
+									},
+									"address_line_3": {
+										"type": "string",
+										"maxLength": 36
+									},
+									"address_line_4": {
+										"type": "string",
+										"maxLength": 36
+									},
+									"postal_code": {
+										"type": "string",
+										"maxLength": 10
+									},
+									"telephone_number": {
+										"type": "string",
+										"maxLength": 16
+									},
+									"fascsimile_transmission_number": {
+										"type": "string",
+										"maxLength": 16
+									},
+									"reference": {
+										"type": "string",
+										"maxLength": 30
+									},
+									"country": {
+										"type": "string",
+										"maxLength": 3
+									},
+									"state": {
+										"type": "string",
+										"maxLength": 2
+									},
+									"delivery_specification": {
+										"type": "string",
+										"maxLength": 12
+									},
+									"city": {
+										"type": "string",
+										"maxLength": 20
+									},
+									"delivery_customer": {
+										"type": "string",
+										"maxLength": 6
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

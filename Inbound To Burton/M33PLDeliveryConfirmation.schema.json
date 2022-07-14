@@ -1,0 +1,183 @@
+{
+	"$schema": "http://json-schema.org/draft-06/schema#",
+	"$id": "http://schema.infor.com/json-schema/M33PLDeliveryConfirmation.json",
+	"title": "M33PLDeliveryConfirmation",
+	"description": "This is a delivery confirmation sent from the 3PL to Burton Infor M3.",
+	"type": "object",
+	"required": [
+		"DeliveryConfirmation"
+	],
+	"properties": {
+		"DeliveryConfirmation": {
+			"type": "object",
+			"required": [
+				"delivery_header",
+				"delivery_line"
+			],
+			"properties": {
+				"delivery_header": {
+					"type": "object",
+					"required": [
+						"company",
+						"warehouse",
+						"reporting_date",
+						"reporting_time",
+						"customer_number",
+						"delivery_number",
+						"order_number",
+						"pick_list_suffix"
+					],
+					"properties": {
+						"company": {
+							"type": "string",
+							"maxLength": 3
+						},
+						"warehouse": {
+							"type": "string",
+							"maxLength": 3
+						},
+						"reporting_date": {
+							"type": "string",
+							"maxLength": 10,
+							"description": "date in yyyy-MM-dd format"
+						},
+						"reporting_time": {
+							"type": "string",
+							"maxLength": 8,
+							"description": "time in HH:mm:ss format"
+						},
+						"customer_number": {
+							"type": "string",
+							"maxLength": 10
+						},
+						"delivery_number": {
+							"type": "string",
+							"maxLength": 11
+						},
+						"order_number": {
+							"type": "string",
+							"maxLength": 10
+						},
+						"pick_list_suffix": {
+							"type": "string",
+							"maxLength": 3
+						}
+					}
+				},
+				"delivery_line": {
+					"type": "array",
+					"x-position": 2,
+					"items": {
+						"type": "object",
+						"required": [
+							"package_number",
+							"packaging",
+							"unit_gross_weight",
+							"basic_unit_of_measure",
+							"alternate_unit_of_measure",
+							"volume",
+							"SSCC",
+							"SCAC",
+							"tracking_number",
+							"bill_of_lading",
+							"item_number",
+							"item_number_EA13",
+							"item_number_UPC",
+							"order_line_number",
+							"quantity_picked",
+							"issue_move",
+							"country_of_origins"
+						],
+						"properties": {
+							"package_number": {
+								"type": "string",
+								"maxLength": 20
+							},
+							"packaging": {
+								"type": "string",
+								"maxLength": 6
+							},
+							"unit_gross_weight": {
+								"type": "string",
+								"maxLength": 17
+							},
+							"basic_unit_of_measure": {
+								"type": "string",
+								"maxLength": 3
+							},
+							"alternate_unit_of_measure": {
+								"type": "string",
+								"maxLength": 3
+							},
+							"volume": {
+								"type": "string",
+								"maxLength": 17
+							},
+							"SSCC": {
+								"type": "string",
+								"maxLength": 18
+							},
+							"SCAC": {
+								"type": "string",
+								"maxLength": 40
+							},
+							"tracking_number": {
+								"type": "string",
+								"maxLength": 30
+							},
+							"bill_of_lading": {
+								"type": "string",
+								"maxLength": 40
+							},
+							"item_number": {
+								"type": "string",
+								"maxLength": 15
+							},
+							"item_number_EA13": {
+								"type": "string",
+								"maxLength": 13
+							},
+							"item_number_UPC": {
+								"type": "string",
+								"maxLength": 12
+							},
+							"order_line_number": {
+								"type": "string",
+								"maxLength": 6
+							},
+							"quantity_picked": {
+								"type": "string",
+								"maxLength": 17
+							},
+							"issue_move": {
+								"description": "1 or 0",
+								"type": "string",
+								"maxLength": 1
+							},
+							"country_of_origins": {
+								"type": "array",
+								"items": {
+									"type": "object",
+									"required": [
+										"country_of_origin",
+										"quantity_picked"
+									],
+									"properties": {
+										"country_of_origin": {
+											"type": "string",
+											"maxLength": 3
+										},
+										"quantity_picked": {
+											"type": "string",
+											"maxLength": 17
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

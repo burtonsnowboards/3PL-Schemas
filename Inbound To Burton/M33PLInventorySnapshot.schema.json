@@ -1,0 +1,73 @@
+{
+	"$schema": "http://json-schema.org/draft-06/schema#",
+	"$id": "http://schema.infor.com/json-schema/M33PLInventorySnapshot.json",
+	"title": "M33PLInventorySnapshot",
+	"description": "This is an inventory snapshot sent from a 3PL to Burton Infor M3.",
+	"type": "object",
+	"required": [
+		"InventorySnapshot"
+	],
+	"properties": {
+		"InventorySnapshot": {
+			"type": "object",
+			"required": [
+				"snapshot_header",
+				"snapshot_line"
+			],
+			"properties": {
+				"snapshot_header": {
+					"type": "object",
+					"required": [
+						"company",
+						"warehouse"
+					],
+					"properties": {
+						"company": {
+							"type": "string",
+							"maxLength": 3
+						},
+						"warehouse": {
+							"type": "string",
+							"maxLength": 3
+						}
+					}
+				},
+				"snapshot_line": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"required": [
+							"item_number",
+							"item_number_EA13",
+							"item_number_UPC",
+							"location",
+							"quantity"
+						],
+						"properties": {
+							"item_number": {
+								"type": "string",
+								"maxLength": 15
+							},
+							"item_number_EA13": {
+								"type": "string",
+								"maxLength": 13
+							},
+							"item_number_UPC": {
+								"type": "string",
+								"maxLength": 12
+							},
+							"location": {
+								"type": "string",
+								"maxLength": 10
+							},
+							"quantity": {
+								"type": "string",
+								"maxLength": 11
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

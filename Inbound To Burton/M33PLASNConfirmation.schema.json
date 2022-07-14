@@ -1,0 +1,120 @@
+{
+	"$schema": "http://json-schema.org/draft-06/schema#",
+	"$id": "http://schema.infor.com/json-schema/M33PLASNConfirmation.json",
+	"title": "M33PLASNConfirmation",
+	"description": "This is an ASN confirmation sent from a 3PL to Burton Infor M3.",
+	"type": "object",
+	"required": [
+		"ASNConfirmation"
+	],
+	"properties": {
+		"ASNConfirmation": {
+			"type": "object",
+			"required": [
+				"warehouse_head",
+				"warehouse_package"
+			],
+			"properties": {
+				"warehouse_head": {
+					"type": "object",
+					"required": [
+						"company",
+						"message_number",
+						"delivery_note_number",
+						"warehouse"
+					],
+					"properties": {
+						"company": {
+							"type": "string",
+							"maxLength": 3
+						},
+						"message_number": {
+							"type": "string",
+							"maxLength": 15
+						},
+						"delivery_note_number": {
+							"type": "string",
+							"maxLength": 20
+						},
+						"warehouse": {
+							"type": "string",
+							"maxLength": 3
+						}
+					}
+				},
+				"warehouse_package": {
+					"type": "array",
+					"x-position": 2,
+					"items": {
+						"type": "object",
+						"required": [
+							"package_number",
+							"message_line_number",
+							"item_number",
+							"item_number_EA13",
+							"item_number_UPC",
+							"quantity",
+							"vendor_price",
+							"location",
+							"country_of_origins"
+						],
+						"properties": {
+							"package_number": {
+								"type": "string",
+								"maxLength": 20
+							},
+							"message_line_number": {
+								"type": "string",
+								"maxLength": 5
+							},
+							"item_number": {
+								"type": "string",
+								"maxLength": 15
+							},
+							"item_number_EA13": {
+								"type": "string",
+								"maxLength": 13
+							},
+							"item_number_UPC": {
+								"type": "string",
+								"maxLength": 12
+							},
+							"quantity": {
+								"type": "string",
+								"maxLength": 17
+							},
+							"vendor_price": {
+								"type": "string",
+								"maxLength": 19
+							},
+							"location": {
+								"type": "string",
+								"maxLength": 10
+							},
+							"country_of_origins": {
+								"type": "array",
+								"items": {
+									"type": "object",
+									"required": [
+										"country_of_origin",
+										"quantity_picked"
+									],
+									"properties": {
+										"country_of_origin": {
+											"type": "string",
+											"maxLength": 3
+										},
+										"quantity_picked": {
+											"type": "string",
+											"maxLength": 17
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

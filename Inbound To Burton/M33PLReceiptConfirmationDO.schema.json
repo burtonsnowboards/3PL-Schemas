@@ -1,0 +1,117 @@
+{
+	"$schema": "http://json-schema.org/draft-06/schema#",
+	"$id": "http://schema.infor.com/json-schema/M33PLReceiptConfirmationDO.json",
+	"title": "M33PLReceiptConfirmationDO",
+	"description": "This is a distribution order receipt confirmation sent from the 3PL to Burton Infor M3.",
+	"type": "object",
+	"required": [
+		"ReceiptConfirmationDO"
+	],
+	"properties": {
+		"ReceiptConfirmationDO": {
+			"type": "object",
+			"required": [
+				"receipt_header",
+				"receipt_line"
+			],
+			"properties": {
+				"receipt_header": {
+					"type": "object",
+					"required": [
+						"company",
+						"warehouse",
+						"order_number",
+						"delivery_number"
+					],
+					"properties": {
+						"company": {
+							"type": "string",
+							"maxLength": 3
+						},
+						"warehouse": {
+							"type": "string",
+							"maxLength": 3,
+							"description": "The warehouse from which the goods were shipped to."
+						},
+						"order_number": {
+							"type": "string",
+							"maxLength": 10
+						},
+						"delivery_number": {
+							"type": "string",
+							"maxLength": 11
+						}
+					}
+				},
+				"receipt_line": {
+					"type": "array",
+					"x-position": 2,
+					"items": {
+						"type": "object",
+						"required": [
+							"item_number",
+							"item_number_EA13",
+							"item_number_UPC",
+							"order_line_number",
+							"from_warehouse",
+							"location",
+							"quantity_received",
+							"country_of_origins"
+						],
+						"properties": {
+							"item_number": {
+								"type": "string",
+								"maxLength": 15
+							},
+							"item_number_EA13": {
+								"type": "string",
+								"maxLength": 13
+							},
+							"item_number_UPC": {
+								"type": "string",
+								"maxLength": 12
+							},
+							"order_line_number": {
+								"type": "string",
+								"maxLength": 6
+							},
+							"from_warehouse": {
+								"type": "string",
+								"maxLength": 3,
+								"description": "The warehouse from which the goods were shipped from."
+							},
+							"location": {
+								"type": "string",
+								"maxLength": 10
+							},
+							"quantity_received": {
+								"type": "string",
+								"maxLength": 17
+							},
+							"country_of_origins": {
+								"type": "array",
+								"items": {
+									"type": "object",
+									"required": [
+										"country_of_origin",
+										"quantity_picked"
+									],
+									"properties": {
+										"country_of_origin": {
+											"type": "string",
+											"maxLength": 3
+										},
+										"quantity_picked": {
+											"type": "string",
+											"maxLength": 17
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
