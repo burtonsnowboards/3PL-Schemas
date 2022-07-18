@@ -541,7 +541,7 @@
 							},
 							"intercompany_price": {
 								"type": "string",
-								"maxLength": 17
+								"maxLength": 19
 							},
 							"location": {
 								"type": "string",
