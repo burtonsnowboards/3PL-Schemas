@@ -501,8 +501,7 @@
 							"unit_of_measure",
 							"delivery_quantity",
 							"order_line_number",
-							"unit_price_gross",
-							"unit_price_net",
+							"intercompany_price",
 							"location",
 							"unit_gross_weight",
 							"net_weight",
@@ -540,13 +539,9 @@
 								"type": "string",
 								"maxLength": 6
 							},
-							"unit_price_gross": {
+							"intercompany_price": {
 								"type": "string",
-								"maxLength": 19
-							},
-							"unit_price_net": {
-								"type": "string",
-								"maxLength": 18
+								"maxLength": 17
 							},
 							"location": {
 								"type": "string",
