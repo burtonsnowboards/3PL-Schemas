@@ -41,7 +41,8 @@
 							"item_number_EA13",
 							"item_number_UPC",
 							"location",
-							"quantity"
+							"quantity",
+							"country_of_origins"
 						],
 						"properties": {
 							"item_number": {
@@ -63,6 +64,26 @@
 							"quantity": {
 								"type": "string",
 								"maxLength": 11
+							},
+							"country_of_origins": {
+								"type": "array",
+								"items": {
+									"type": "object",
+									"required": [
+										"country_of_origin",
+										"quantity_picked"
+									],
+									"properties": {
+										"country_of_origin": {
+											"type": "string",
+											"maxLength": 3
+										},
+										"quantity_picked": {
+											"type": "string",
+											"maxLength": 17
+										}
+									}
+								}
 							}
 						}
 					}
