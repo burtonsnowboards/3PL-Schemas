@@ -11,10 +11,16 @@
 		"ReceiptConfirmationDO": {
 			"type": "object",
 			"required": [
+				"document_date_time",
 				"receipt_header",
 				"receipt_line"
 			],
 			"properties": {
+				"document_date_time": {
+					"type": "string",
+					"maxLength": 29,
+					"description": "date in yyyy-MM-ddThh:mm:sssz format, preferably in US/Eastern timezone. e.g. 2022-07-25T08:34:32.777-04:00."
+				},
 				"receipt_header": {
 					"type": "object",
 					"required": [

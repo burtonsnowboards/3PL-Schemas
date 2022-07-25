@@ -11,6 +11,7 @@
 		"DeliveryNotificationCO": {
 			"type": "object",
 			"required": [
+				"document_date_time",
 				"delivery_header",
 				"customer_address",
 				"company_address",
@@ -22,6 +23,11 @@
 				"delivery_line"
 			],
 			"properties": {
+				"document_date_time": {
+					"type": "string",
+					"maxLength": 29,
+					"description": "date in yyyy-MM-ddThh:mm:sssz format, preferably in US/Eastern timezone. e.g. 2022-07-25T08:34:32.777-04:00."
+				},
 				"delivery_header": {
 					"type": "object",
 					"required": [
