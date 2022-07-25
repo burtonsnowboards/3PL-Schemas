@@ -176,7 +176,7 @@
 							"unit_of_measure",
 							"delivery_quantity",
 							"order_line_number",
-							"unit_price_gross",
+							"intercompany_price",
 							"unit_gross_weight",
 							"location",
 							"MSRP",
@@ -212,7 +212,7 @@
 								"type": "string",
 								"maxLength": 6
 							},
-							"unit_price_gross": {
+							"intercompany_price": {
 								"type": "string",
 								"maxLength": 19
 							},
