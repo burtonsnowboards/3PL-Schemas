@@ -177,7 +177,7 @@
 							"unit_of_measure",
 							"delivery_quantity",
 							"order_line_number",
-							"intercompany_price",
+							"inv_acc_price",
 							"unit_gross_weight",
 							"location",
 							"MSRP",
@@ -213,7 +213,7 @@
 								"type": "string",
 								"maxLength": 6
 							},
-							"intercompany_price": {
+							"inv_acc_price": {
 								"type": "string",
 								"maxLength": 19
 							},
