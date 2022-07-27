@@ -19,7 +19,7 @@
 				"document_date_time": {
 					"type": "string",
 					"maxLength": 29,
-					"description": "date in yyyy-MM-ddThh:mm:sssz format, preferably in US/Eastern timezone. e.g. 2022-07-25T08:34:32.777-04:00."
+					"description": "date in yyyy-MM-ddThh:mm:sssz (ISO) format, local warehouse timezone. e.g. 2022-07-25T08:34:32.777-04:00."
 				},
 				"return_header": {
 					"type": "object",
