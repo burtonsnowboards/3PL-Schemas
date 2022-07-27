@@ -100,6 +100,10 @@
 								"type": "string",
 								"maxLength": 17
 							},
+							"inv_acc_price": {
+								"type": "string",
+								"maxLength": 19
+							},
 							"unit_gross_weight": {
 								"type": "string",
 								"minimum": 17
