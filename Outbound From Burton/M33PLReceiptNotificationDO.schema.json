@@ -63,6 +63,7 @@
 							"item_number_EA13",
 							"item_number_UPC",
 							"line_number",
+							"inv_acc_price",
 							"delivered_quantity",
 							"unit_gross_weight",
 							"net_weight",
