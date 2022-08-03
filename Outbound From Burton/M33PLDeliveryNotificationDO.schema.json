@@ -33,8 +33,6 @@
 						"delivery_method",
 						"delivery_terms",
 						"gross_weight",
-						"project_number",
-						"project_element",
 						"warehouse",
 						"SCAC",
 						"requested_delivery_date",
@@ -77,14 +75,6 @@
 						"gross_weight": {
 							"type": "string",
 							"maxLength": 17
-						},
-						"project_number": {
-							"type": "string",
-							"maxLength": 7
-						},
-						"project_element": {
-							"type": "string",
-							"maxLength": 8
 						},
 						"warehouse": {
 							"type": "string",
