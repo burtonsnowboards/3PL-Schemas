@@ -13,11 +13,9 @@
 			"required": [
 				"document_date_time",
 				"delivery_header",
-				"customer_address",
 				"company_address",
 				"payer_address",
 				"ship_to_address",
-				"sold_to_address",
 				"shipping_condition",
 				"shipping_instructions",
 				"delivery_line"
@@ -104,73 +102,6 @@
 						"facility": {
 							"type": "string",
 							"maxLength": 3
-						}
-					}
-				},
-				"customer_address": {
-					"type": "object",
-					"required": [
-						"code",
-						"name",
-						"address_1",
-						"address_2",
-						"address_3",
-						"address_4",
-						"postal_code",
-						"telephone_number",
-						"fascsmile_tranmission",
-						"country",
-						"state",
-						"city"
-					],
-					"properties": {
-						"code": {
-							"type": "string",
-							"maxLength": 10
-						},
-						"name": {
-							"type": "string",
-							"maxLength": 36
-						},
-						"address_1": {
-							"type": "string",
-							"maxLength": 36
-						},
-						"address_2": {
-							"type": "string",
-							"maxLength": 36
-						},
-						"address_3": {
-							"type": "string",
-							"maxLength": 36
-						},
-						"address_4": {
-							"type": "string",
-							"maxLength": 36
-						},
-						"postal_code": {
-							"type": "string",
-							"maxLength": 10
-						},
-						"telephone_number": {
-							"type": "string",
-							"maxLength": 16
-						},
-						"fascsmile_tranmission": {
-							"type": "string",
-							"maxLength": 16
-						},
-						"country": {
-							"type": "string",
-							"maxLength": 3
-						},
-						"state": {
-							"type": "string",
-							"maxLength": 2
-						},
-						"city": {
-							"type": "string",
-							"maxLength": 20
 						}
 					}
 				},
@@ -309,73 +240,6 @@
 					}
 				},
 				"ship_to_address": {
-					"type": "object",
-					"required": [
-						"code",
-						"name",
-						"address_1",
-						"address_2",
-						"address_3",
-						"address_4",
-						"postal_code",
-						"telephone_number",
-						"fascsmile_tranmission",
-						"country",
-						"state",
-						"city"
-					],
-					"properties": {
-						"code": {
-							"type": "string",
-							"maxLength": 10
-						},
-						"name": {
-							"type": "string",
-							"maxLength": 36
-						},
-						"address_1": {
-							"type": "string",
-							"maxLength": 36
-						},
-						"address_2": {
-							"type": "string",
-							"maxLength": 36
-						},
-						"address_3": {
-							"type": "string",
-							"maxLength": 36
-						},
-						"address_4": {
-							"type": "string",
-							"maxLength": 36
-						},
-						"postal_code": {
-							"type": "string",
-							"maxLength": 10
-						},
-						"telephone_number": {
-							"type": "string",
-							"maxLength": 16
-						},
-						"fascsmile_tranmission": {
-							"type": "string",
-							"maxLength": 16
-						},
-						"country": {
-							"type": "string",
-							"maxLength": 3
-						},
-						"state": {
-							"type": "string",
-							"maxLength": 2
-						},
-						"city": {
-							"type": "string",
-							"maxLength": 20
-						}
-					}
-				},
-				"sold_to_address": {
 					"type": "object",
 					"required": [
 						"code",
