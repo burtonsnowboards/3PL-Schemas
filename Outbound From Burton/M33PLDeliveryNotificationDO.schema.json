@@ -164,6 +164,7 @@
 							"item_number",
 							"item_number_EA13",
 							"item_number_UPC",
+							"customers_item_number"
 							"unit_of_measure",
 							"delivery_quantity",
 							"order_line_number",
@@ -190,6 +191,10 @@
 							"item_number_UPC": {
 								"type": "string",
 								"maxLength": 12
+							},
+							"customers_item_number": {
+								"type": "string",
+								"maxLength": 20
 							},
 							"unit_of_measure": {
 								"type": "string",
