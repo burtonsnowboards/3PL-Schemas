@@ -244,6 +244,7 @@
 					"required": [
 						"code",
 						"name",
+						"name_2",
 						"address_1",
 						"address_2",
 						"address_3",
@@ -263,6 +264,10 @@
 						"name": {
 							"type": "string",
 							"maxLength": 36
+						},
+						"name_2": {
+							"type": "string",
+							"maxLength": 30
 						},
 						"address_1": {
 							"type": "string",
