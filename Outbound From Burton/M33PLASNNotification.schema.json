@@ -65,16 +65,13 @@
 							"item_number_UPC",
 							"quantity",
 							"stock_category",
-							"country_of_origin",
 							"HTS_code",
-							"vendor",
 							"vendor_price",
 							"incoterms",
 							"incoterms_description",
 							"purchase_order_number",
 							"location",
 							"unit_gross_weight",
-							"MID_code",
 							"country_of_origins"
 						],
 						"properties": {
@@ -106,17 +103,9 @@
 								"type": "string",
 								"maxLength": 3
 							},
-							"country_of_origin": {
-								"type": "string",
-								"maxLength": 3
-							},
 							"HTS_code": {
 								"type": "string",
 								"maxLength": 16
-							},
-							"vendor": {
-								"type": "string",
-								"maxLength": 10
 							},
 							"vendor_price": {
 								"type": "string",
@@ -142,17 +131,16 @@
 								"type": "string",
 								"maxLength": 17
 							},
-							"MID_code": {
-								"type": "string",
-								"maxLength": 20
-							},
 							"country_of_origins": {
 								"type": "array",
 								"items": {
 									"type": "object",
 									"required": [
 										"country_of_origin",
-										"quantity_picked"
+										"quantity_picked",
+										"vendor",
+										"manufacturer",
+										"MID_code"
 									],
 									"properties": {
 										"country_of_origin": {
@@ -162,6 +150,18 @@
 										"quantity_picked": {
 											"type": "string",
 											"maxLength": 17
+										},
+										"vendor": {
+											"type": "string",
+											"maxLength": 10
+										},
+										"manufacturer": {
+											"type": "string",
+											"maxLength": 10
+										},
+										"MID_code": {
+											"type": "string",
+											"maxLength": 20
 										}
 									}
 								}
