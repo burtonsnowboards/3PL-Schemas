@@ -63,8 +63,8 @@
 							"item_number_EA13",
 							"item_number_UPC",
 							"line_number",
-							"inv_acc_price",
 							"delivered_quantity",
+							"inv_acc_price",
 							"unit_gross_weight",
 							"net_weight",
 							"unit_of_measure",
@@ -131,16 +131,17 @@
 									"type": "object",
 									"required": [
 										"country_of_origin",
-										"delivered_quantity",
+										"quantity_picked",
 										"vendor",
-										"manufacturer"
+										"manufacturer",
+										"MID_code"
 									],
 									"properties": {
 										"country_of_origin": {
 											"type": "string",
 											"maxLength": 3
 										},
-										"delivered_quantity": {
+										"quantity_picked": {
 											"type": "string",
 											"maxLength": 17
 										},
@@ -151,6 +152,10 @@
 										"manufacturer": {
 											"type": "string",
 											"maxLength": 10
+										},
+										"MID_code": {
+											"type": "string",
+											"maxLength": 20
 										}
 									}
 								}
