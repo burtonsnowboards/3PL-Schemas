@@ -1,0 +1,744 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "ITEM_MASTER_3PL"
+    ],
+    "properties": {
+        "ITEM_MASTER_3PL": {
+            "type": "array",
+            "default": [],
+            "title": "The ITEM_MASTER_3PL Schema",
+            "items": {
+                "type": "object",
+                "default": {},
+                "title": "A Schema",
+                "required": [
+                    "SKU_NUM",
+                    "POPULAR_NUM",
+                    "STYLE_DESC",
+                    "SEASON",
+                    "COLLECTION",
+                    "ITEM_GROUP",
+                    "PROCUREMENT_GROUP",
+                    "UPC",
+                    "UPC_CHECK",
+                    "EAN",
+                    "UPC_BASE_UNIT",
+                    "WEIGHT_GROSS",
+                    "WEIGHT_NET",
+                    "WEIGHT_UNIT",
+                    "LENGTH",
+                    "WIDTH",
+                    "HEIGHT",
+                    "DIMENSION_UNIT_MEASURE",
+                    "VOLUME",
+                    "VOLUME_UNIT",
+                    "SMU_IND",
+                    "INITIAL_SEASON",
+                    "LAST_SEASON",
+                    "COUNTRY_OF_ORIGIN",
+                    "MATERIAL_CONTENTS_1",
+                    "MATERIAL_CONTENTS_2",
+                    "DROP_IND",
+                    "SIZE_CODE",
+                    "SIZE_DESC",
+                    "SIZE_NAME",
+                    "SIZE_Z_CODE",
+                    "SIZE_Z_DESC",
+                    "SIZE_Z_NAME",
+                    "COLOR_CODE",
+                    "COLOR_DESC",
+                    "COLOR_NAME",
+                    "PH1_DESCRIPTION",
+                    "PH1",
+                    "PH2_DESCRIPTION",
+                    "PH2",
+                    "PH3_DESCRIPTION",
+                    "PH3",
+                    "PH4_DESCRIPTION",
+                    "PH4",
+                    "FEATURE_X",
+                    "FEATURE_Y",
+                    "FEATURE_Z",
+                    "SUPPLIER",
+                    "MANUFACTURER_NAME",
+                    "SUPPLIER_NUM",
+                    "AGREEMENT_NUM",
+                    "AGREEMENT_TYPE",
+                    "PA_VALID_FROM",
+                    "PA_VALID_TO",
+                    "PA_TERMS",
+                    "PA_PRICE",
+                    "PROD_COMM_CODE",
+                    "PROD_MARKET",
+                    "SN_PROFILE"
+                ],
+                "properties": {
+                    "SKU_NUM": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The SKU_NUM Schema",
+                        "examples": [
+                            "100000802CRG00L"
+                        ]
+                    },
+                    "POPULAR_NUM": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The POPULAR_NUM Schema",
+                        "examples": [
+                            "10000008303-L"
+                        ]
+                    },
+                    "STYLE_DESC": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The STYLE_DESC Schema",
+                        "examples": [
+                            "M AK GORE CYCLIC PT"
+                        ]
+                    },
+                    "SEASON": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The SEASON Schema",
+                        "examples": [
+                            "W22"
+                        ]
+                    },
+                    "COLLECTION": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The COLLECTION Schema",
+                        "examples": [
+                            "AK"
+                        ]
+                    },
+                    "ITEM_GROUP": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The ITEM_GROUP Schema",
+                        "examples": [
+                            ""
+                        ]
+                    },
+                    "PROCUREMENT_GROUP": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The PROCUREMENT_GROUP Schema",
+                        "examples": [
+                            ""
+                        ]
+                    },
+                    "UPC": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The UPC Schema",
+                        "examples": [
+                            "19317723742"
+                        ]
+                    },
+                    "UPC_CHECK": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The UPC_CHECK Schema",
+                        "examples": [
+                            "193177237420"
+                        ]
+                    },
+                    "EAN": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The EAN Schema",
+                        "examples": [
+                            "9010510076229"
+                        ]
+                    },
+                    "UPC_BASE_UNIT": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The UPC_BASE_UNIT Schema",
+                        "examples": [
+                            "EA"
+                        ]
+                    },
+                    "WEIGHT_GROSS": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The WEIGHT_GROSS Schema",
+                        "examples": [
+                            "2.105"
+                        ]
+                    },
+                    "WEIGHT_NET": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The WEIGHT_NET Schema",
+                        "examples": [
+                            "2.105"
+                        ]
+                    },
+                    "WEIGHT_UNIT": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The WEIGHT_UNIT Schema",
+                        "examples": [
+                            "LB"
+                        ]
+                    },
+                    "LENGTH": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The LENGTH Schema",
+                        "examples": [
+                            "58.000"
+                        ]
+                    },
+                    "WIDTH": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The WIDTH Schema",
+                        "examples": [
+                            "36.000"
+                        ]
+                    },
+                    "HEIGHT": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The HEIGHT Schema",
+                        "examples": [
+                            "4.000"
+                        ]
+                    },
+                    "DIMENSION_UNIT_MEASURE": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The DIMENSION_UNIT_MEASURE Schema",
+                        "examples": [
+                            "CM"
+                        ]
+                    },
+                    "VOLUME": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The VOLUME Schema",
+                        "examples": [
+                            "8352.000"
+                        ]
+                    },
+                    "VOLUME_UNIT": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The VOLUME_UNIT Schema",
+                        "examples": [
+                            "CCM"
+                        ]
+                    },
+                    "SMU_IND": {
+                        "type": "null",
+                        "default": null,
+                        "title": "The SMU_IND Schema",
+                        "examples": [
+                            null
+                        ]
+                    },
+                    "INITIAL_SEASON": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The INITIAL_SEASON Schema",
+                        "examples": [
+                            ""
+                        ]
+                    },
+                    "LAST_SEASON": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The LAST_SEASON Schema",
+                        "examples": [
+                            ""
+                        ]
+                    },
+                    "COUNTRY_OF_ORIGIN": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The COUNTRY_OF_ORIGIN Schema",
+                        "examples": [
+                            "VN"
+                        ]
+                    },
+                    "MATERIAL_CONTENTS_1": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The MATERIAL_CONTENTS_1 Schema",
+                        "examples": [
+                            ""
+                        ]
+                    },
+                    "MATERIAL_CONTENTS_2": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The MATERIAL_CONTENTS_2 Schema",
+                        "examples": [
+                            ""
+                        ]
+                    },
+                    "DROP_IND": {
+                        "type": "null",
+                        "default": null,
+                        "title": "The DROP_IND Schema",
+                        "examples": [
+                            null
+                        ]
+                    },
+                    "SIZE_CODE": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The SIZE_CODE Schema",
+                        "examples": [
+                            "00L"
+                        ]
+                    },
+                    "SIZE_DESC": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The SIZE_DESC Schema",
+                        "examples": [
+                            "L"
+                        ]
+                    },
+                    "SIZE_NAME": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The SIZE_NAME Schema",
+                        "examples": [
+                            "L"
+                        ]
+                    },
+                    "SIZE_Z_CODE": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The SIZE_Z_CODE Schema",
+                        "examples": [
+                            "RG"
+                        ]
+                    },
+                    "SIZE_Z_DESC": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The SIZE_Z_DESC Schema",
+                        "examples": [
+                            "Regular"
+                        ]
+                    },
+                    "SIZE_Z_NAME": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The SIZE_Z_NAME Schema",
+                        "examples": [
+                            "Regular"
+                        ]
+                    },
+                    "COLOR_CODE": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The COLOR_CODE Schema",
+                        "examples": [
+                            "02C"
+                        ]
+                    },
+                    "COLOR_DESC": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The COLOR_DESC Schema",
+                        "examples": [
+                            "VICTOR CAMO"
+                        ]
+                    },
+                    "COLOR_NAME": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The COLOR_NAME Schema",
+                        "examples": [
+                            "VICTOR CAMO"
+                        ]
+                    },
+                    "PH1_DESCRIPTION": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The PH1_DESCRIPTION Schema",
+                        "examples": [
+                            ""
+                        ]
+                    },
+                    "PH1": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The PH1 Schema",
+                        "examples": [
+                            ""
+                        ]
+                    },
+                    "PH2_DESCRIPTION": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The PH2_DESCRIPTION Schema",
+                        "examples": [
+                            ""
+                        ]
+                    },
+                    "PH2": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The PH2 Schema",
+                        "examples": [
+                            ""
+                        ]
+                    },
+                    "PH3_DESCRIPTION": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The PH3_DESCRIPTION Schema",
+                        "examples": [
+                            ""
+                        ]
+                    },
+                    "PH3": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The PH3 Schema",
+                        "examples": [
+                            ""
+                        ]
+                    },
+                    "PH4_DESCRIPTION": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The PH4_DESCRIPTION Schema",
+                        "examples": [
+                            "M AK GORE CYCLIC PT"
+                        ]
+                    },
+                    "PH4": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The PH4 Schema",
+                        "examples": [
+                            "20010420361030"
+                        ]
+                    },
+                    "FEATURE_X": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The FEATURE_X Schema",
+                        "examples": [
+                            "X001"
+                        ]
+                    },
+                    "FEATURE_Y": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The FEATURE_Y Schema",
+                        "examples": [
+                            "Y001"
+                        ]
+                    },
+                    "FEATURE_Z": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The FEATURE_Z Schema",
+                        "examples": [
+                            "Z001"
+                        ]
+                    },
+                    "SUPPLIER": {
+                        "type": "null",
+                        "default": null,
+                        "title": "The SUPPLIER Schema",
+                        "examples": [
+                            null
+                        ]
+                    },
+                    "MANUFACTURER_NAME": {
+                        "type": "null",
+                        "default": null,
+                        "title": "The MANUFACTURER_NAME Schema",
+                        "examples": [
+                            null
+                        ]
+                    },
+                    "SUPPLIER_NUM": {
+                        "type": "null",
+                        "default": null,
+                        "title": "The SUPPLIER_NUM Schema",
+                        "examples": [
+                            null
+                        ]
+                    },
+                    "AGREEMENT_NUM": {
+                        "type": "null",
+                        "default": null,
+                        "title": "The AGREEMENT_NUM Schema",
+                        "examples": [
+                            null
+                        ]
+                    },
+                    "AGREEMENT_TYPE": {
+                        "type": "null",
+                        "default": null,
+                        "title": "The AGREEMENT_TYPE Schema",
+                        "examples": [
+                            null
+                        ]
+                    },
+                    "PA_VALID_FROM": {
+                        "type": "null",
+                        "default": null,
+                        "title": "The PA_VALID_FROM Schema",
+                        "examples": [
+                            null
+                        ]
+                    },
+                    "PA_VALID_TO": {
+                        "type": "null",
+                        "default": null,
+                        "title": "The PA_VALID_TO Schema",
+                        "examples": [
+                            null
+                        ]
+                    },
+                    "PA_TERMS": {
+                        "type": "null",
+                        "default": null,
+                        "title": "The PA_TERMS Schema",
+                        "examples": [
+                            null
+                        ]
+                    },
+                    "PA_PRICE": {
+                        "type": "null",
+                        "default": null,
+                        "title": "The PA_PRICE Schema",
+                        "examples": [
+                            null
+                        ]
+                    },
+                    "PROD_COMM_CODE": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The PROD_COMM_CODE Schema",
+                        "examples": [
+                            "6210.402531"
+                        ]
+                    },
+                    "PROD_MARKET": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The PROD_MARKET Schema",
+                        "examples": [
+                            "USA"
+                        ]
+                    },
+                    "SN_PROFILE": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The SN_PROFILE Schema",
+                        "examples": [
+                            "N"
+                        ]
+                    }
+                },
+                "examples": [{
+                    "SKU_NUM": "100000802CRG00L",
+                    "POPULAR_NUM": "10000008303-L",
+                    "STYLE_DESC": "M AK GORE CYCLIC PT",
+                    "SEASON": "W22",
+                    "COLLECTION": "AK",
+                    "ITEM_GROUP": "",
+                    "PROCUREMENT_GROUP": "",
+                    "UPC": "19317723742",
+                    "UPC_CHECK": "193177237420",
+                    "EAN": "9010510076229",
+                    "UPC_BASE_UNIT": "EA",
+                    "WEIGHT_GROSS": "2.105",
+                    "WEIGHT_NET": "2.105",
+                    "WEIGHT_UNIT": "LB",
+                    "LENGTH": "58.000",
+                    "WIDTH": "36.000",
+                    "HEIGHT": "4.000",
+                    "DIMENSION_UNIT_MEASURE": "CM",
+                    "VOLUME": "8352.000",
+                    "VOLUME_UNIT": "CCM",
+                    "SMU_IND": null,
+                    "INITIAL_SEASON": "",
+                    "LAST_SEASON": "",
+                    "COUNTRY_OF_ORIGIN": "VN",
+                    "MATERIAL_CONTENTS_1": "",
+                    "MATERIAL_CONTENTS_2": "",
+                    "DROP_IND": null,
+                    "SIZE_CODE": "00L",
+                    "SIZE_DESC": "L",
+                    "SIZE_NAME": "L",
+                    "SIZE_Z_CODE": "RG",
+                    "SIZE_Z_DESC": "Regular",
+                    "SIZE_Z_NAME": "Regular",
+                    "COLOR_CODE": "02C",
+                    "COLOR_DESC": "VICTOR CAMO",
+                    "COLOR_NAME": "VICTOR CAMO",
+                    "PH1_DESCRIPTION": "",
+                    "PH1": "",
+                    "PH2_DESCRIPTION": "",
+                    "PH2": "",
+                    "PH3_DESCRIPTION": "",
+                    "PH3": "",
+                    "PH4_DESCRIPTION": "M AK GORE CYCLIC PT",
+                    "PH4": "20010420361030",
+                    "FEATURE_X": "X001",
+                    "FEATURE_Y": "Y001",
+                    "FEATURE_Z": "Z001",
+                    "SUPPLIER": null,
+                    "MANUFACTURER_NAME": null,
+                    "SUPPLIER_NUM": null,
+                    "AGREEMENT_NUM": null,
+                    "AGREEMENT_TYPE": null,
+                    "PA_VALID_FROM": null,
+                    "PA_VALID_TO": null,
+                    "PA_TERMS": null,
+                    "PA_PRICE": null,
+                    "PROD_COMM_CODE": "6210.402531",
+                    "PROD_MARKET": "USA",
+                    "SN_PROFILE": "N"
+                }]
+            },
+            "examples": [
+                [{
+                    "SKU_NUM": "100000802CRG00L",
+                    "POPULAR_NUM": "10000008303-L",
+                    "STYLE_DESC": "M AK GORE CYCLIC PT",
+                    "SEASON": "W22",
+                    "COLLECTION": "AK",
+                    "ITEM_GROUP": "",
+                    "PROCUREMENT_GROUP": "",
+                    "UPC": "19317723742",
+                    "UPC_CHECK": "193177237420",
+                    "EAN": "9010510076229",
+                    "UPC_BASE_UNIT": "EA",
+                    "WEIGHT_GROSS": "2.105",
+                    "WEIGHT_NET": "2.105",
+                    "WEIGHT_UNIT": "LB",
+                    "LENGTH": "58.000",
+                    "WIDTH": "36.000",
+                    "HEIGHT": "4.000",
+                    "DIMENSION_UNIT_MEASURE": "CM",
+                    "VOLUME": "8352.000",
+                    "VOLUME_UNIT": "CCM",
+                    "SMU_IND": null,
+                    "INITIAL_SEASON": "",
+                    "LAST_SEASON": "",
+                    "COUNTRY_OF_ORIGIN": "VN",
+                    "MATERIAL_CONTENTS_1": "",
+                    "MATERIAL_CONTENTS_2": "",
+                    "DROP_IND": null,
+                    "SIZE_CODE": "00L",
+                    "SIZE_DESC": "L",
+                    "SIZE_NAME": "L",
+                    "SIZE_Z_CODE": "RG",
+                    "SIZE_Z_DESC": "Regular",
+                    "SIZE_Z_NAME": "Regular",
+                    "COLOR_CODE": "02C",
+                    "COLOR_DESC": "VICTOR CAMO",
+                    "COLOR_NAME": "VICTOR CAMO",
+                    "PH1_DESCRIPTION": "",
+                    "PH1": "",
+                    "PH2_DESCRIPTION": "",
+                    "PH2": "",
+                    "PH3_DESCRIPTION": "",
+                    "PH3": "",
+                    "PH4_DESCRIPTION": "M AK GORE CYCLIC PT",
+                    "PH4": "20010420361030",
+                    "FEATURE_X": "X001",
+                    "FEATURE_Y": "Y001",
+                    "FEATURE_Z": "Z001",
+                    "SUPPLIER": null,
+                    "MANUFACTURER_NAME": null,
+                    "SUPPLIER_NUM": null,
+                    "AGREEMENT_NUM": null,
+                    "AGREEMENT_TYPE": null,
+                    "PA_VALID_FROM": null,
+                    "PA_VALID_TO": null,
+                    "PA_TERMS": null,
+                    "PA_PRICE": null,
+                    "PROD_COMM_CODE": "6210.402531",
+                    "PROD_MARKET": "USA",
+                    "SN_PROFILE": "N"
+                }]
+            ]
+        }
+    },
+    "examples": [{
+        "ITEM_MASTER_3PL": [{
+            "SKU_NUM": "100000802CRG00L",
+            "POPULAR_NUM": "10000008303-L",
+            "STYLE_DESC": "M AK GORE CYCLIC PT",
+            "SEASON": "W22",
+            "COLLECTION": "AK",
+            "ITEM_GROUP": "",
+            "PROCUREMENT_GROUP": "",
+            "UPC": "19317723742",
+            "UPC_CHECK": "193177237420",
+            "EAN": "9010510076229",
+            "UPC_BASE_UNIT": "EA",
+            "WEIGHT_GROSS": "2.105",
+            "WEIGHT_NET": "2.105",
+            "WEIGHT_UNIT": "LB",
+            "LENGTH": "58.000",
+            "WIDTH": "36.000",
+            "HEIGHT": "4.000",
+            "DIMENSION_UNIT_MEASURE": "CM",
+            "VOLUME": "8352.000",
+            "VOLUME_UNIT": "CCM",
+            "SMU_IND": null,
+            "INITIAL_SEASON": "",
+            "LAST_SEASON": "",
+            "COUNTRY_OF_ORIGIN": "VN",
+            "MATERIAL_CONTENTS_1": "",
+            "MATERIAL_CONTENTS_2": "",
+            "DROP_IND": null,
+            "SIZE_CODE": "00L",
+            "SIZE_DESC": "L",
+            "SIZE_NAME": "L",
+            "SIZE_Z_CODE": "RG",
+            "SIZE_Z_DESC": "Regular",
+            "SIZE_Z_NAME": "Regular",
+            "COLOR_CODE": "02C",
+            "COLOR_DESC": "VICTOR CAMO",
+            "COLOR_NAME": "VICTOR CAMO",
+            "PH1_DESCRIPTION": "",
+            "PH1": "",
+            "PH2_DESCRIPTION": "",
+            "PH2": "",
+            "PH3_DESCRIPTION": "",
+            "PH3": "",
+            "PH4_DESCRIPTION": "M AK GORE CYCLIC PT",
+            "PH4": "20010420361030",
+            "FEATURE_X": "X001",
+            "FEATURE_Y": "Y001",
+            "FEATURE_Z": "Z001",
+            "SUPPLIER": null,
+            "MANUFACTURER_NAME": null,
+            "SUPPLIER_NUM": null,
+            "AGREEMENT_NUM": null,
+            "AGREEMENT_TYPE": null,
+            "PA_VALID_FROM": null,
+            "PA_VALID_TO": null,
+            "PA_TERMS": null,
+            "PA_PRICE": null,
+            "PROD_COMM_CODE": "6210.402531",
+            "PROD_MARKET": "USA",
+            "SN_PROFILE": "N"
+        }]
+    }]
+}
