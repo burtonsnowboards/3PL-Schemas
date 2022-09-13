@@ -70,6 +70,7 @@
 							"incoterms",
 							"incoterms_description",
 							"purchase_order_number",
+							"order_type",
 							"location",
 							"unit_gross_weight",
 							"country_of_origins"
@@ -122,6 +123,10 @@
 							"purchase_order_number": {
 								"type": "string",
 								"maxLength": 10
+							},
+							"order_type": {
+								"type": "string",
+								"maxLength": 3
 							},
 							"location": {
 								"type": "string",
