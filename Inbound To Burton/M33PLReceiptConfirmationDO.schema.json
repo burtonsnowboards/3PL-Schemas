@@ -26,6 +26,7 @@
 					"required": [
 						"company",
 						"warehouse",
+						"from_warehouse",
 						"order_number",
 						"delivery_number"
 					],
@@ -38,6 +39,11 @@
 							"type": "string",
 							"maxLength": 3,
 							"description": "The warehouse from which the goods were shipped to."
+						},
+						"from_warehouse": {
+								"type": "string",
+								"maxLength": 3,
+								"description": "The warehouse from which the goods were shipped from."
 						},
 						"order_number": {
 							"type": "string",
@@ -59,7 +65,6 @@
 							"item_number_EA13",
 							"item_number_UPC",
 							"order_line_number",
-							"from_warehouse",
 							"location",
 							"quantity_received",
 							"country_of_origins"
