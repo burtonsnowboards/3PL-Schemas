@@ -27,7 +27,8 @@
 						"company",
 						"warehouse",
 						"delivery_number",
-						"order_number"
+						"order_number",
+						"requested_delivery_date"
 					],
 					"properties": {
 						"company": {
@@ -49,6 +50,11 @@
 						"gross_weight": {
 							"type": "string",
 							"maxLength": 10
+						},
+						"requested_delivery_date": {
+							"type": "string",
+							"maxLength": 10,
+							"description": "date in yyyy-MM-dd format"
 						}
 					}
 				},
