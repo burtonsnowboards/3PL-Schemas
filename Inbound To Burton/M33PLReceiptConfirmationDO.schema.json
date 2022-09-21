@@ -86,11 +86,6 @@
 								"type": "string",
 								"maxLength": 6
 							},
-							"from_warehouse": {
-								"type": "string",
-								"maxLength": 3,
-								"description": "The warehouse from which the goods were shipped from."
-							},
 							"location": {
 								"type": "string",
 								"maxLength": 10
