@@ -318,6 +318,7 @@
 						"SCAC",
 						"delivery_method",
 						"delivery_terms",
+						"payment_term",
 						"UCCID"
 					],
 					"properties": {
@@ -332,7 +333,12 @@
 							"maxLength": 3
 						},
 						"delivery_terms": {
-							"type": "string"
+							"type": "string",
+							"maxLength": 3
+						},
+						"payment_term": {
+							"type": "string",
+							"maxLength": 3
 						},
 						"UCCID": {
 							"type": "string"
