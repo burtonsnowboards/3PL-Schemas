@@ -317,7 +317,7 @@
 						"freight_account",
 						"SCAC",
 						"delivery_method",
-						"terms",
+						"delivery_terms",
 						"UCCID"
 					],
 					"properties": {
@@ -331,7 +331,7 @@
 							"type": "string",
 							"maxLength": 3
 						},
-						"terms": {
+						"delivery_terms": {
 							"type": "string"
 						},
 						"UCCID": {
