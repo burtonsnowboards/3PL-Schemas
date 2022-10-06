@@ -31,7 +31,8 @@
 						"customer_number",
 						"delivery_number",
 						"order_number",
-						"pick_list_suffix"
+						"pick_list_suffix",
+						"customer_ref_num"
 					],
 					"properties": {
 						"company": {
@@ -67,6 +68,10 @@
 						"pick_list_suffix": {
 							"type": "string",
 							"maxLength": 3
+						},
+						"customer_ref_num": {
+							"type": "string",
+							"maxLength": 30
 						}
 					}
 				},
