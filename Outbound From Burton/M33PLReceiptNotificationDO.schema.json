@@ -26,6 +26,7 @@
 					"required": [
 						"company",
 						"warehouse",
+						"from_warehouse",
 						"delivery_number",
 						"order_number",
 						"requested_delivery_date"
@@ -36,6 +37,10 @@
 							"maxLength": 3
 						},
 						"warehouse": {
+							"type": "string",
+							"maxLength": 3
+						},
+						"from_warehouse": {
 							"type": "string",
 							"maxLength": 3
 						},
@@ -74,7 +79,6 @@
 							"unit_gross_weight",
 							"net_weight",
 							"unit_of_measure",
-							"from_warehouse",
 							"HTS_code",
 							"country_of_origins"
 						],
@@ -120,10 +124,6 @@
 								"minimum": 17
 							},
 							"unit_of_measure": {
-								"type": "string",
-								"maxLength": 3
-							},
-							"from_warehouse": {
 								"type": "string",
 								"maxLength": 3
 							},
