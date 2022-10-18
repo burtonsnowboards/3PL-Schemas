@@ -29,6 +29,7 @@
 						"from_warehouse",
 						"delivery_number",
 						"order_number",
+						"customers_order_number",
 						"requested_delivery_date"
 					],
 					"properties": {
@@ -53,6 +54,10 @@
 							"maxLength": 10
 						},
 						"gross_weight": {
+							"type": "string",
+							"maxLength": 10
+						},
+						"customers_order_number": {
 							"type": "string",
 							"maxLength": 10
 						},
