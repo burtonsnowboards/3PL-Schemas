@@ -65,7 +65,7 @@
                     "FEATURE_Y",
                     "FEATURE_Z",
                     "SUPPLIER",
-                    "MANUFACTURER_NAME",
+                    "MANUFACTURER",
                     "SUPPLIER_NUM",
                     "AGREEMENT_NUM",
                     "AGREEMENT_TYPE",
