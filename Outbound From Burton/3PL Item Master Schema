@@ -462,10 +462,10 @@
                             null
                         ]
                     },
-                    "MANUFACTURER_NAME": {
+                    "MANUFACTURER": {
                         "type": "null",
                         "default": null,
-                        "title": "The MANUFACTURER_NAME Schema",
+                        "title": "The MANUFACTURER Schema",
                         "examples": [
                             null
                         ]
