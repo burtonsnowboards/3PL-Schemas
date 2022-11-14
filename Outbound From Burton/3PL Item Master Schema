@@ -65,7 +65,7 @@
                     "FEATURE_Y",
                     "FEATURE_Z",
                     "SUPPLIER",
-                    "MANUFACTURER_NAME",
+                    "MANUFACTURER",
                     "SUPPLIER_NUM",
                     "AGREEMENT_NUM",
                     "AGREEMENT_TYPE",
@@ -462,10 +462,10 @@
                             null
                         ]
                     },
-                    "MANUFACTURER_NAME": {
+                    "MANUFACTURER": {
                         "type": "null",
                         "default": null,
-                        "title": "The MANUFACTURER_NAME Schema",
+                        "title": "The MANUFACTURER Schema",
                         "examples": [
                             null
                         ]
