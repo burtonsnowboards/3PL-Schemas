@@ -116,7 +116,7 @@
 						"address_4",
 						"postal_code",
 						"telephone_number",
-						"fascsmile_tranmission",
+						"fascsmile_transmission",
 						"country",
 						"state",
 						"city"
@@ -154,7 +154,7 @@
 							"type": "string",
 							"maxLength": 16
 						},
-						"fascsmile_tranmission": {
+						"fascsmile_transmission": {
 							"type": "string",
 							"maxLength": 16
 						},
