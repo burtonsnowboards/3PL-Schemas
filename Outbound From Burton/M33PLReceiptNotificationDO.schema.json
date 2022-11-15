@@ -29,6 +29,7 @@
 						"from_warehouse",
 						"delivery_number",
 						"order_number",
+						"gross_weight",
 						"customers_order_number",
 						"requested_delivery_date"
 					],
