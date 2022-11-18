@@ -75,7 +75,8 @@
                     "PA_PRICE",
                     "PROD_COMM_CODE",
                     "PROD_MARKET",
-                    "SN_PROFILE"
+                    "SN_PROFILE",
+                    "MULTIPLE_COO"
                 ],
                 "properties": {
                     "SKU_NUM": {
@@ -549,7 +550,15 @@
                         "examples": [
                             "N"
                         ]
-                    }
+                    },
+                        "MULTIPLE_COO": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The MULTIPLE_COO Schema",
+                        "examples": [
+                            "X"
+                        ]
+                    },
                 },
                 "examples": [{
                     "SKU_NUM": "100000802CRG00L",
@@ -610,7 +619,8 @@
                     "PA_PRICE": null,
                     "PROD_COMM_CODE": "6210.402531",
                     "PROD_MARKET": "USA",
-                    "SN_PROFILE": "N"
+                    "SN_PROFILE": "N",
+                    "MULTIPLE_COO": "X"
                 }]
             },
             "examples": [
@@ -674,6 +684,7 @@
                     "PROD_COMM_CODE": "6210.402531",
                     "PROD_MARKET": "USA",
                     "SN_PROFILE": "N"
+                    "MULTIPLE_COO": "X"
                 }]
             ]
         }
@@ -739,6 +750,7 @@
             "PROD_COMM_CODE": "6210.402531",
             "PROD_MARKET": "USA",
             "SN_PROFILE": "N"
+            "MULTIPLE_COO": ""
         }]
     }]
 }
