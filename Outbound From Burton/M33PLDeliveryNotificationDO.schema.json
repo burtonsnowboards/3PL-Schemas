@@ -242,16 +242,7 @@
 							"VAS": {
 								"type": "array",
 								"items": {
-									"type": "object",
-									"required": [
-										"VAS"
-									],
-									"properties": {
-										"VAS": {
-											"type": "string",
-											"maxLength": 15
-										}
-									}
+									"type": "string"
 								}
 							}
 						}
