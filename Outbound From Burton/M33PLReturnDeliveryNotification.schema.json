@@ -72,7 +72,8 @@
 							"quantity",
 							"item_number",
 							"item_number_EA13",
-							"item_number_UPC"
+							"item_number_UPC",
+							"country_of_origins"
 						],
 						"properties": {
 							"order_line_number": {
@@ -94,6 +95,41 @@
 							"item_number_UPC": {
 								"type": "string",
 								"maxLength": 12
+							},
+							"country_of_origins": {
+								"type": "array",
+								"items": {
+									"type": "object",
+									"required": [
+										"country_of_origin",
+										"quantity_picked",
+										"vendor",
+										"manufacturer",
+										"MID_code"
+									],
+									"properties": {
+										"country_of_origin": {
+											"type": "string",
+											"maxLength": 3
+										},
+										"quantity_picked": {
+											"type": "string",
+											"maxLength": 17
+										},
+										"vendor": {
+											"type": "string",
+											"maxLength": 10
+										},
+										"manufacturer": {
+											"type": "string",
+											"maxLength": 10
+										},
+										"MID_code": {
+											"type": "string",
+											"maxLength": 20
+										}
+									}
+								}
 							}
 						}
 					}
