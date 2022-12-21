@@ -54,7 +54,6 @@
 							"item_number_UPC",
 							"location",
 							"quantity",
-							"transaction_reason",
 							"country_of_origins"
 						],
 						"properties": {
@@ -78,10 +77,6 @@
 								"type": "string",
 								"maxLength": 11,
 								"description": "physical inventory quantity"
-							},
-							"transaction_reason": {
-								"type": "string",
-								"maxLength": 3
 							},
 							"country_of_origins": {
 								"type": "array",
