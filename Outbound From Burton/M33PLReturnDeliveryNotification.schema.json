@@ -30,7 +30,8 @@
 						"order_number",
 						"customers_order_number",
 						"order_type",
-						"gross_weight"
+						"gross_weight",
+						"ship_to_address"
 					],
 					"properties": {
 						"company": {
@@ -60,6 +61,73 @@
 						"gross_weight": {
 							"type": "string",
 							"maxLength": 17
+						},
+						"ship_to_address": {
+							"type": "object",
+							"required": [
+								"code",
+								"name",
+								"address_1",
+								"address_2",
+								"address_3",
+								"address_4",
+								"postal_code",
+								"telephone_number",
+								"fascsmile_transmission",
+								"country",
+								"state",
+								"city"
+							],
+							"properties": {
+								"code": {
+									"type": "string",
+									"maxLength": 10
+								},
+								"name": {
+									"type": "string",
+									"maxLength": 36
+								},
+								"address_1": {
+									"type": "string",
+									"maxLength": 36
+								},
+								"address_2": {
+									"type": "string",
+									"maxLength": 36
+								},
+								"address_3": {
+									"type": "string",
+									"maxLength": 36
+								},
+								"address_4": {
+									"type": "string",
+									"maxLength": 36
+								},
+								"postal_code": {
+									"type": "string",
+									"maxLength": 10
+								},
+								"telephone_number": {
+									"type": "string",
+									"maxLength": 16
+								},
+								"fascsmile_transmission": {
+									"type": "string",
+									"maxLength": 16
+								},
+								"country": {
+									"type": "string",
+									"maxLength": 3
+								},
+								"state": {
+									"type": "string",
+									"maxLength": 2
+								},
+								"city": {
+									"type": "string",
+									"maxLength": 20
+								}
+							}
 						}
 					}
 				},
