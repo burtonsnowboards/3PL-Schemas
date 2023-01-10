@@ -136,7 +136,7 @@
 					"items": {
 						"type": "object",
 						"required": [
-							"order_line_number",
+							"receiving_line_number",
 							"quantity",
 							"item_number",
 							"item_number_EA13",
@@ -144,7 +144,7 @@
 							"country_of_origins"
 						],
 						"properties": {
-							"order_line_number": {
+							"receiving_line_number": {
 								"type": "string",
 								"maxLength": 5
 							},
