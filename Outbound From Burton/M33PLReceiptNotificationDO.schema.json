@@ -82,6 +82,7 @@
 							"line_number",
 							"delivered_quantity",
 							"inv_acc_price",
+							"currency",
 							"unit_gross_weight",
 							"net_weight",
 							"unit_of_measure",
@@ -124,6 +125,10 @@
 							"unit_gross_weight": {
 								"type": "string",
 								"minimum": 17
+							},
+							"currency": {
+								"type": "string",
+								"minimum": 3
 							},
 							"net_weight": {
 								"type": "string",
