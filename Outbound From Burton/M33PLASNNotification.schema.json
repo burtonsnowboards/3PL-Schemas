@@ -67,6 +67,7 @@
 							"stock_category",
 							"HTS_code",
 							"vendor_price",
+							"currency",
 							"incoterms",
 							"incoterms_description",
 							"purchase_order_number",
@@ -111,6 +112,10 @@
 							"vendor_price": {
 								"type": "string",
 								"maxLength": 19
+							},
+							"currency": {
+								"type": "string",
+								"maxLength": 3
 							},
 							"incoterms": {
 								"type": "string",
