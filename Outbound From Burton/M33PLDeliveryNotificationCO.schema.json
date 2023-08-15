@@ -384,6 +384,7 @@
 							"delivery_quantity",
 							"order_line_number",
 							"intercompany_price",
+							"net_price",
 							"location",
 							"unit_gross_weight",
 							"net_weight",
@@ -428,6 +429,10 @@
 							"intercompany_price": {
 								"type": "string",
 								"maxLength": 19
+							},
+							"net_price": {
+								"type": "string",
+								"maxLength": 18
 							},
 							"location": {
 								"type": "string",
